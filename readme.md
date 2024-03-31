@@ -83,7 +83,7 @@ The Login Form allows you to easily add a login form to your WordPress site. It 
 = Download & Upload: =
 1. Download the **Login Form** plugin (*.zip file*)
 2. In your admin area, go to the Plugins menu and click on **Add New**
-3. Click on **Upload Plugin** and choose the **`plugin-slug.zip`** file and click on **Install Now**
+3. Click on **Upload Plugin** and choose the **`login-form.zip`** file and click on **Install Now**
 4. Activate the plugin and Enjoy!
 
 = Manually: =
