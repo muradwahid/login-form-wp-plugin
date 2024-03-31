@@ -1,0 +1,1 @@
+export const tostPositionOptions = [{ label: "Top-Center", value: "top-center" }, { label: "Top-Left", value: "top-left" }, { label: "Top-Right", value: "top-right" },{ label: "Bottom-Center", value: "bottom-center" }, { label: "Bottom-Left", value: "bottom-left" }, { label: "Bottom-Right", value: "bottom-right" }]

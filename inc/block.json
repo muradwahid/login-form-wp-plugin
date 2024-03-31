@@ -1,0 +1,202 @@
+{
+  "apiVersion": "1",
+  "name": "b-blocks/login-form",
+  "title": "Login Form",
+  "description": "Login form easily customize your login page.",
+  "category": "widgets",
+  "keywords": ["login", "form", "login form"],
+  "textdomain": "b-blocks",
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": ""
+    },
+    "cId": {
+      "type": "string",
+      "default": ""
+    },
+    "form": {
+      "type": "object",
+      "default": {
+        "background": {
+          "color": "#0000"
+        },
+        "fieldGap": "18px",
+        "linkColor": "",
+        "linkHovColor": "#ffa500",
+        "padding": {
+          "desktop": {
+            "top": "0px",
+            "left": "0px",
+            "bottom": "0px",
+            "right": "0px"
+          },
+          "tablet": {
+            "top": "0px",
+            "left": "0px",
+            "bottom": "0px",
+            "right": "0px"
+          },
+          "mobile": {
+            "top": "0px",
+            "left": "0px",
+            "bottom": "0px",
+            "right": "0px"
+          }
+        },
+        "margin": {
+          "desktop": {
+            "top": "0px",
+            "left": "0px",
+            "bottom": "0px",
+            "right": "0px"
+          },
+          "tablet": {
+            "top": "0px",
+            "left": "0px",
+            "bottom": "0px",
+            "right": "0px"
+          },
+          "mobile": {
+            "top": "0px",
+            "left": "0px",
+            "bottom": "0px",
+            "right": "0px"
+          }
+        },
+        "border": { "width": "0px" },
+        "shadow": []
+      }
+    },
+    "labels": {
+      "type": "object",
+      "default": {
+        "show": true,
+        "username": "Username or Email Address",
+        "password": "Password",
+        "space": "0px",
+        "color": "#484848",
+        "typography": {
+          "fontSize": { "desktop": 16 }
+        }
+      }
+    },
+    "formInput": {
+      "type": "object",
+      "default": {
+        "size": "small",
+        "username": "Username or Email Address",
+        "password": "Password",
+        "padding": {
+          "top": "10px",
+          "left": "10px",
+          "bottom": "10px",
+          "right": "10px"
+        },
+        "color": "",
+        "typography": { "fontSize": 16 },
+        "bgColor": "",
+        "border": {
+          "width": "1px",
+          "color": "rgba(204, 204, 204, 1)",
+          "radius": "3px"
+        },
+        "icon": {
+          "show": true,
+          "color": "#000",
+          "position": 10,
+          "size": 18
+        }
+      }
+    },
+    "errorMessage": {
+      "type": "object",
+      "default": {
+        "username": "Username or Email is required!",
+        "password": "Password is required!",
+        "typography": {
+          "fontSize": 12
+        },
+        "color": "#ff0000"
+      }
+    },
+    "button": {
+      "type": "object",
+      "default": {
+        "text": "Log In",
+        "alignment": { "desktop": "left", "tablet": "left", "mobile": "left" },
+        "typography": { "fontSize": { "desktop": 15 } },
+        "colors": { "color": "#f9f9f9", "bg": "#ffa500" },
+        "hovColors": { "color": "#f9f9f9", "bg": "#ffa500" },
+        "padding": {
+          "top": "15px",
+          "left": "30px",
+          "bottom": "15px",
+          "right": "30px"
+        },
+        "border": { "radius": "3px" },
+        "borderHovColor": "",
+        "shadow": [],
+        "animation": "none"
+      }
+    },
+    "additional": {
+      "type": "object",
+      "default": {
+        "loginRedirect": "",
+        "logoutRedirect": "",
+        "lostPass": true,
+        "lostPassText": "Lost your password?",
+        "remember": true
+      }
+    },
+    "messages": {
+      "type": "object",
+      "default": {
+        "type": "normal",
+        "padding": {
+          "top": "10px",
+          "left": "10px",
+          "bottom": "10px",
+          "right": "10px"
+        },
+        "typography": { "fontSize": {"desktop":14} },
+        "position": "",
+        "normal": {
+          "color": { "bg": { "color": "" }, "text": "#e36565" },
+          "border": { "width": "1px", "color": "#e36565" },
+          "padding": {
+            "top": "10px",
+            "left": "10px",
+            "bottom": "10px",
+            "right": "10px"
+          }
+        },
+        "success": {
+          "show": true,
+          "text": "Successfully logged in",
+          "color": { "bg": "", "text": "" }
+        },
+        "error": {
+          "show": true,
+          "color": { "bg": "#e36565", "text": "#ffffff" }
+        }
+      }
+    }
+  },
+  "supports": {
+    "align": ["wide", "full"],
+    "html": false
+  },
+  "example": {
+    "attributes": {
+      "preview": true,
+      "columns": {
+        "desktop": 1,
+        "tablet": 1,
+        "mobile": 1
+      }
+    }
+  },
+  "editorScript": "file:./../dist/editor.js"
+}

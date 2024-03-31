@@ -1,0 +1,645 @@
+$primaryColor: #4527a4;
+
+// Common CSS
+html {
+  scroll-behavior: smooth;
+}
+
+// Dashicon
+.dashicons {
+  font-family: dashicons !important;
+}
+
+// Block Name
+.wp-block-lgfr-login-form {
+  * {
+    box-sizing: border-box;
+  }
+  .icon {
+    font-style: inherit;
+  }
+
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.login-form-main-wrapper {
+  box-sizing: border-box;
+  .login-form-wrapper {
+    display: grid;
+    row-gap: 10px;
+    .form-field {
+      display: grid;
+      label {
+        color: #484848;
+      }
+      input {
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .password-inputField {
+        position: relative;
+        .passwordEyeIcon {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          cursor: pointer;
+          display: grid;
+          align-self: center;
+        }
+      }
+      .loginForm-errorMessage {
+        color: red;
+        font-size: 12px;
+      }
+    }
+    .login-submitBtn {
+      .submitBtn {
+        background-color: #ffa500;
+        border: none;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        text-decoration: none;
+        color: #f9f9f9;
+        &:hover {
+          background-color: #ffa600d2;
+        }
+      }
+      .submitBtn.grow {
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      .submitBtn.shrink {
+        &:hover {
+          transform: scale(0.9);
+        }
+      }
+      .submitBtn.pulse {
+        &:hover {
+          animation: pulse infinite linear 1s;
+        }
+      }
+      @keyframes pulse {
+        25% {
+          transform: scale(1.1);
+        }
+        75% {
+          transform: scale(0.9);
+        }
+      }
+      .submitBtn.pulsegrow {
+        &:hover {
+          animation: pulsegrow infinite linear alternate 0.3s;
+        }
+      }
+      @keyframes pulsegrow {
+        100% {
+          transform: scale(1.1);
+        }
+      }
+      .submitBtn.pulseshrink {
+        &:hover {
+          animation: pulseshrink infinite linear alternate 0.3s;
+        }
+      }
+      @keyframes pulseshrink {
+        100% {
+          transform: scale(0.9);
+        }
+      }
+      .submitBtn.push {
+        &:hover {
+          animation: push linear alternate 0.3s 1;
+        }
+      }
+      @keyframes push {
+        25% {
+          transform: scale(0.9);
+        }
+        75% {
+          transform: scale(1);
+        }
+      }
+      .submitBtn.pop {
+        &:hover {
+          animation-name: pop;
+          animation-duration: 0.3s;
+          animation-timing-function: linear;
+          animation-iteration-count: 1;
+          animation-direction: alternate;
+        }
+      }
+      @keyframes pop {
+        25% {
+          transform: scale(1.1);
+        }
+        75% {
+          transform: scale(1);
+        }
+      }
+      .submitBtn.bouncein {
+        &:hover {
+          transform: scale(1.2);
+          animation: bouncein linear alternate 0.5s;
+        }
+      }
+      @keyframes bouncein {
+        0% {
+          transform: scale(1);
+        }
+
+        25% {
+          transform: scale(1.1);
+        }
+
+        50% {
+          transform: scale(1.2);
+        }
+        75% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1.2);
+        }
+      }
+      .submitBtn.bounceout {
+        &:hover {
+          transform: scale(0.8);
+          animation: bounceout linear alternate 0.5s;
+        }
+      }
+      @keyframes bounceout {
+        0% {
+          transform: scale(1);
+        }
+
+        25% {
+          transform: scale(0.9);
+        }
+
+        50% {
+          transform: scale(0.8);
+        }
+        75% {
+          transform: scale(0.9);
+        }
+        100% {
+          transform: scale(0.8);
+        }
+      }
+      .submitBtn.rotate {
+        &:hover {
+          transform: rotate(4deg);
+          transition: rotate 0.2s ease-in-out;
+        }
+      }
+      .submitBtn.growrotate {
+        &:hover {
+          transform: rotate(4deg) scale(1.1);
+          transition: rotate 0.2s ease-in-out;
+        }
+      }
+      .submitBtn.float {
+        &:hover {
+          transform: translateY(-8px);
+        }
+      }
+      .submitBtn.sink {
+        &:hover {
+          transform: translateY(8px);
+        }
+      }
+      .submitBtn.bob {
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          transform: translateY(-8px);
+          animation-name: bob;
+          animation-duration: 1s;
+          animation-delay: 0.5s;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: infinite;
+          animation-fill-mode: forwards;
+          animation-direction: normal, alternate;
+        }
+      }
+      @keyframes bob {
+        0% {
+          transform: translateY(-8px);
+        }
+        50% {
+          transform: translateY(-4px);
+        }
+
+        100% {
+          transform: translateY(-8px);
+        }
+      }
+      .submitBtn.hang {
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          transform: translateY(8px);
+          animation-name: hang;
+          animation-duration: 1s;
+          animation-delay: 0.5s;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: infinite;
+          animation-fill-mode: forwards;
+          animation-direction: normal, alternate;
+        }
+      }
+      @keyframes hang {
+        0% {
+          transform: translateY(8px);
+        }
+        50% {
+          transform: translateY(4px);
+        }
+
+        100% {
+          transform: translateY(8px);
+        }
+      }
+      .submitBtn.skew {
+        &:hover {
+          transform: skewX(-10deg);
+        }
+      }
+      .submitBtn.skewforward {
+        transform-origin: bottom right;
+        &:hover {
+          transform: skewX(-10deg);
+        }
+      }
+      .submitBtn.skewbackward {
+        transform-origin: bottom right;
+        &:hover {
+          transform: skewX(10deg);
+        }
+      }
+      .submitBtn.wobblevertical {
+        &:hover {
+          animation: wobblevertical 1s ease-in-out 1;
+        }
+      }
+      @keyframes wobblevertical {
+        16.65% {
+          transform: translateY(8px);
+        }
+
+        33.3% {
+          transform: translateY(-6px);
+        }
+        49.95% {
+          transform: translateY(4px);
+        }
+        66.6% {
+          transform: translateY(-2px);
+        }
+        83.25% {
+          transform: translateY(1px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      .submitBtn.wobblehorizontal {
+        &:hover {
+          animation: wobblehorizontal 1s ease-in-out 1;
+        }
+      }
+      @keyframes wobblehorizontal {
+        16.65% {
+          transform: translateX(8px);
+        }
+        33.3% {
+          transform: translateX(-6px);
+        }
+        49.95% {
+          transform: translateX(4px);
+        }
+        66.6% {
+          transform: translateX(-2px);
+        }
+        83.25% {
+          transform: translateX(1px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      .submitBtn.wobbletobottomright {
+        &:hover {
+          animation: wobbletobottomright 1s ease-in-out 1;
+        }
+      }
+      @keyframes wobbletobottomright {
+        16.65% {
+          transform: translate(8px, 8px);
+        }
+
+        33.3% {
+          transform: translate(-6px, -6px);
+        }
+        49.95% {
+          transform: translate(4px, 4px);
+        }
+        66.6% {
+          transform: translate(-2px, -2px);
+        }
+        83.25% {
+          transform: translate(1px, 1px);
+        }
+        100% {
+          transform: translate(0, 0);
+        }
+      }
+      .submitBtn.wobbletotopright {
+        &:hover {
+          animation: wobbletotopright 1s ease-in-out 1;
+        }
+      }
+      @keyframes wobbletotopright {
+        16.65% {
+          transform: translate(8px, -8px);
+        }
+        33.3% {
+          transform: translate(-6px, 6px);
+        }
+
+        49.95% {
+          transform: translate(4px, -4px);
+        }
+        66.6% {
+          transform: translate(-2px, 2px);
+        }
+        83.25% {
+          transform: translate(1px, -1px);
+        }
+        100% {
+          transform: translate(0, 0);
+        }
+      }
+      .submitBtn.wobbletop {
+        transform-origin: bottom right;
+        &:hover {
+          animation: wobbletop 1s ease-in-out 1;
+        }
+      }
+      @keyframes wobbletop {
+        16.65% {
+          transform: skew(-12deg);
+        }
+        33.3% {
+          transform: skew(10deg);
+        }
+        49.95% {
+          transform: skew(-6deg);
+        }
+        66.6% {
+          transform: skew(4deg);
+        }
+        83.25% {
+          transform: skew(-2deg);
+        }
+        100% {
+          transform: skew(0);
+        }
+      }
+      .submitBtn.wobblebottom {
+        transform-origin: top right;
+        &:hover {
+          animation: wobblebottom 1s ease-in-out 1;
+        }
+      }
+      @keyframes wobblebottom {
+        16.65% {
+          transform: skew(-12deg);
+        }
+        33.3% {
+          transform: skew(10deg);
+        }
+        49.95% {
+          transform: skew(-6deg);
+        }
+        66.6% {
+          transform: skew(4deg);
+        }
+        83.25% {
+          transform: skew(-2deg);
+        }
+        100% {
+          transform: skew(0);
+        }
+      }
+      .submitBtn.wobbleskew {
+        &:hover {
+          animation: wobbleskew 1s ease-in-out 1;
+        }
+      }
+      @keyframes wobbleskew {
+        16.65% {
+          transform: skew(-12deg);
+        }
+
+        33.3% {
+          transform: skew(10deg);
+        }
+        49.95% {
+          transform: skew(-6deg);
+        }
+        66.6% {
+          transform: skew(4deg);
+        }
+        83.25% {
+          transform: skew(-2deg);
+        }
+        100% {
+          transform: skew(0);
+        }
+      }
+      .submitBtn.buzz {
+        &:hover {
+          animation: buzz 0.15s linear infinite;
+        }
+      }
+      @keyframes buzz {
+        50% {
+          transform: translateX(3px) rotate(2deg);
+        }
+
+        100% {
+          transform: translateX(-3px) rotate(-2deg);
+        }
+      }
+      .submitBtn.buzzout {
+        &:hover {
+          animation: buzzout 0.75s linear 1;
+        }
+      }
+      @keyframes buzzout {
+        10% {
+          transform: translateX(3px) rotate(2deg);
+        }
+
+        20% {
+          transform: translateX(-3px) rotate(-2deg);
+        }
+        30% {
+          transform: translateX(3px) rotate(2deg);
+        }
+        40% {
+          transform: translateX(-3px) rotate(-2deg);
+        }
+        50% {
+          transform: translateX(2px) rotate(1deg);
+        }
+        60% {
+          transform: translateX(-2px) rotate(-1deg);
+        }
+        70% {
+          transform: translateX(2px) rotate(1deg);
+        }
+        80% {
+          transform: translateX(-2px) rotate(-1deg);
+        }
+        90% {
+          transform: translateX(1px) rotate(0);
+        }
+        100% {
+          transform: translateX(-1px) rotate(0);
+        }
+      }
+    }
+    .login-checkbox {
+      input[type="checkbox" i]::after {
+        background-color: initial;
+        cursor: default;
+        appearance: auto;
+        box-sizing: border-box;
+        margin: 3px 3px 3px 0px !important;
+        padding: initial;
+        border: initial;
+      }
+      input[type="checkbox"] {
+        margin: 3px 3px 3px 0px !important;
+      }
+    }
+    .login-lostPassword {
+      a {
+        color: #484848;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+  .form-error-message {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+}
+.lgfr-logoutBtn {
+  color: blue;
+}
+.login-failed-error {
+  background-color: #e36565 !important;
+  div {
+    color: #ffffff;
+    white-space: nowrap !important;
+  }
+}
+.lgfr-reset-password-main-wrapper {
+  .lgfr-reset-form {
+    max-width: 620px;
+    background: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 8px 6px #80808033;
+    border-radius: 10px;
+    .lgfr-reset-password-message {
+      .error-message {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #e3656538;
+        color: #e36565;
+        margin: 0;
+        margin-bottom: 14px;
+        font-weight: 400;
+        font-size: smaller;
+      }
+      .success-message {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #007ec71f;
+        color: #007fc7;
+        margin: 0;
+        margin-bottom: 14px;
+        font-weight: 400;
+        font-size: smaller;
+      }
+    }
+    .lgfr-backtoForm {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      border: none;
+      background: #fff0;
+      margin-bottom: 10px;
+      transition: all 0.2s ease-in-out;
+      color: #3e3e3e;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .lgfr-reset-password-heading {
+      margin-top: 0px;
+      margin-bottom: 5px;
+      color: #3e3e3e;
+    }
+    p.message {
+      margin-top: 5px;
+      font-size: 14px;
+      color: #3e3e3e;
+    }
+    .lgfr-reset-password-wrapper {
+      .lgfr-reset-pass-field {
+        input {
+          width: 100%;
+          padding: 10px 10px 10px 10px;
+          margin-bottom: 15px;
+          box-sizing: border-box;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+      }
+      .lgfr-sendmailBtn {
+        button {
+          background: #007fc7;
+          border: none;
+          color: #fff;
+          padding: 13px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: all 0.2s ease-in-out;
+          font-size: 14px;
+          &:hover {
+            background-color: #0693e3;
+          }
+        }
+      }
+    }
+  }
+}
+.btnDisabled {
+  opacity: 0.5 !important;
+  cursor: no-drop !important;
+}
