@@ -9,17 +9,16 @@ Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Description of the Login Form
+Login Form allows you to easily add a login form to your site. It provides a user-friendly interface for visitors to sign in to their accounts.
 
 == Description ==
 
 The Login Form allows you to easily add a login form to your WordPress site. It provides a user-friendly interface for visitors to sign in to their accounts.
 
-
 **[Demos](https://bblockswp.com/demo/login-form)**
 
-
 = Features =
+
 - **Customizable Fields**: You can select which fields to include in the form, such as username or email and password.
 
 - **Field Validation**: The block automatically validates fields to ensure that required information is provided.
@@ -38,9 +37,8 @@ The Login Form allows you to easily add a login form to your WordPress site. It 
 
 - **AJAX Submission**: The form submits data via AJAX, providing a smooth and user-friendly experience.
 
-
-
 = How to use =
+
 - First, install the Login Form plugin
 - Add the Login Form from the block category called "Widgets" in Gutenberg editor.
 - You can change block settings from the right-side settings sidebar.
@@ -48,15 +46,13 @@ The Login Form allows you to easily add a login form to your WordPress site. It 
 
 * For installation help click on Installation Tab
 
-
 = Feedback =
-- Did you like this plugin? Dislike it? Have a feature request? [Please share your feedback with us](mailto:support@bplugins.com 'Send feedback')
 
+- Did you like this plugin? Dislike it? Have a feature request? [Please share your feedback with us](mailto:support@bplugins.com "Send feedback")
 
 = ⭐ Check out the Parent Plugin of this plugin- =
 
 🔥 **[b Blocks](https://bblockswp.com)** – Best gutenberg blocks collections for WordPress.
-
 
 = ⭐ Check out our other WordPress Plugins- =
 
@@ -72,24 +68,25 @@ The Login Form allows you to easily add a login form to your WordPress site. It 
 
 🔥 **[Advanced Post Block](https://bplugins.com/products/advanced-post-block/)** – Display your Posts, Custom Post Content and Blogs in a professional way!
 
-
 == Installation ==
 
 = From Gutenberg Editor: =
+
 1. Go to the WordPress Block/Gutenberg Editor
 2. Search For **Login Form**
 3. Click on the **Login Form** to add the block
 
 = Download & Upload: =
-1. Download the **Login Form** plugin (*.zip file*)
+
+1. Download the **Login Form** plugin (_.zip file_)
 2. In your admin area, go to the Plugins menu and click on **Add New**
 3. Click on **Upload Plugin** and choose the **`login-form.zip`** file and click on **Install Now**
 4. Activate the plugin and Enjoy!
 
 = Manually: =
+
 1. Download and upload the **Login Form** plugin to the **`/wp-content/plugins/`** directory
 2. Activate the plugin through the Plugins menu in WordPress
-
 
 == Frequently Asked Questions ==
 
@@ -113,20 +110,19 @@ You can use unlimited times as you want.
 
 You can post your questions on the [support forum here](https://wordpress.org/support/plugin/login-form/)
 
-
 == Screenshots ==
 
 1. Login Form
 2. Settings
 
-
 == Changelog ==
 
 = 1.0.0 =
-* Initial Release
 
+- Initial Release
 
 == Upgrade Notice ==
 
 = 1.0.0 =
-* Initial Release
+
+- Initial Release

@@ -20,5 +20,5 @@ export const bundle = () =>
       '!todo.txt',
       '!webpack.config.js',
     ])
-    .pipe(zip('login-form.zip'))
+    .pipe(zip('login-form-block.zip'))
     .pipe(gulp.dest('bundled'));

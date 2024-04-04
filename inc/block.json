@@ -1,11 +1,11 @@
 {
   "apiVersion": "1",
-  "name": "b-blocks/login-form",
-  "title": "Login Form",
+  "name": "b-blocks/login-form-block",
+  "title": "Login Form Block",
   "description": "Login form easily customize your login page.",
   "category": "widgets",
   "keywords": ["login", "form", "login form"],
-  "textdomain": "b-blocks",
+  "textdomain": "login-form-block",
   "attributes": {
     "align": {
       "type": "string",
@@ -160,7 +160,7 @@
           "bottom": "10px",
           "right": "10px"
         },
-        "typography": { "fontSize": {"desktop":14} },
+        "typography": { "fontSize": { "desktop": 14 } },
         "position": "",
         "normal": {
           "color": { "bg": { "color": "" }, "text": "#e36565" },

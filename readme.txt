@@ -1,7 +1,7 @@
 === Login Form ===
 Contributors: abuhayat
 Donate link: https://gum.co/wpdonate/
-Tags: block, key1, key2, key3, Gutenberg block
+Tags: block, login,form,signin, Gutenberg block
 Requires at least: 5.0+
 Tested up to: 6.3.1
 Stable tag: 1.0.0
@@ -9,14 +9,14 @@ Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Description of the Login Form
+Login Form allows you to easily add a login form to your site. It provides a user-friendly interface for visitors to sign in to their accounts.
 
 == Description ==
 
 The Login Form allows you to easily add a login form to your WordPress site. It provides a user-friendly interface for visitors to sign in to their accounts.
 
 
-**[Demos](https://bblockswp.com/demo/login-form)**
+**[Demos](https://bblockswp.com/demo/login-form-block)**
 
 
 = Features =
@@ -83,11 +83,11 @@ The Login Form allows you to easily add a login form to your WordPress site. It 
 = Download & Upload: =
 1. Download the **Login Form** plugin (*.zip file*)
 2. In your admin area, go to the Plugins menu and click on **Add New**
-3. Click on **Upload Plugin** and choose the **`plugin-slug.zip`** file and click on **Install Now**
+3. Click on **Upload Plugin** and choose the **`login-form-block.zip`** file and click on **Install Now**
 4. Activate the plugin and Enjoy!
 
 = Manually: =
-1. Download and upload the **Login Form** plugin to the **`/wp-content/plugins/`** directory
+1. Download and upload the **Login Form Block** plugin to the **`/wp-content/plugins/`** directory
 2. Activate the plugin through the Plugins menu in WordPress
 
 
@@ -111,7 +111,7 @@ You can use unlimited times as you want.
 
 = Where can I get support? =
 
-You can post your questions on the [support forum here](https://wordpress.org/support/plugin/login-form/)
+You can post your questions on the [support forum here](https://wordpress.org/support/plugin/login-form-block/)
 
 
 == Screenshots ==

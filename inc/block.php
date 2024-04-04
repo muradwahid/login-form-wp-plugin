@@ -17,7 +17,7 @@ class LGFRLoginForm
 			'render_callback' => [$this, 'render']
 		]); // Register Block
 
-		wp_set_script_translations('lgfr-hello-editor-script', 'b-blocks', LGFR_DIR_PATH . 'languages');
+		wp_set_script_translations('lgfr-hello-editor-script', 'login-form-block', LGFR_DIR_PATH . 'languages');
 	}
 
 	function render($attributes)
@@ -26,7 +26,7 @@ class LGFRLoginForm
 
 		wp_enqueue_style('lgfr-hello-style');
 		wp_enqueue_script('lgfr-hello-script', LGFR_DIR_URL . 'dist/script.js', ['react', 'react-dom', 'wp-util'], LGFR_VERSION, true);
-		wp_set_script_translations('lgfr-hello-script', 'b-blocks', LGFR_DIR_PATH . 'languages');
+		wp_set_script_translations('lgfr-hello-script', 'login-form-block', LGFR_DIR_PATH . 'languages');
 
 		$className = $className ?? '';
 		$blockClassName = "wp-login-lgfr-form $className align$align";
@@ -100,7 +100,7 @@ function reset_password_callback(){
 
 		$message = __('Someone requested that the password be reset for the following account:') . "\r\n\r\n";
 		$message .= network_home_url( '/' ) . "\r\n\r\n";
-		$message .= sprintf(__('Username: %s'), $user_login) . "\r\n\r\n";
+		$message .= sprintf(__('Username:', 'login-form-block').' %s', $user_login) . "\r\n\r\n";
 		$message .= __('If this was a mistake, just ignore this email and nothing will happen.') . "\r\n\r\n";
 		$message .= __('To reset your password, visit the following address:') . "\r\n\r\n";
 		$message .= network_site_url("wp-login.php?action=rp&key=$key&login=" . rawurlencode($user_login), 'login') . ">\r\n";
@@ -113,14 +113,14 @@ function reset_password_callback(){
 				$blogname = wp_specialchars_decode(get_option('blogname'), ENT_QUOTES);
 			}
 
-		$title = sprintf( __('[%s] Password Reset'), $blogname );
+		$title = sprintf('[%s]'. __(' Password Reset', 'login-form-block'), $blogname );
 
 		$title = apply_filters('retrieve_password_title', $title);
 		$message = apply_filters('retrieve_password_message', $message, $key);
 
 		if ( $message && !wp_mail($user_email, $title, $message) ){
 				wp_send_json_error([
-					'message' => _('The e-mail could not be sent.') . "<br />\n" . _('Possible reason: your host may have disabled the mail() function...')
+					'message' => __('The e-mail could not be sent.', 'login-form-block') . "<br />\n" . __('Possible reason: your host may have disabled the mail() function...', 'login-form-block')
 				]);
 		}
 		

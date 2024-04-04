@@ -1,13 +1,13 @@
 <?php
 /**
- * Plugin Name: Login Form
+ * Plugin Name: Login Form Block
  * Description: Description of the Login Form.
  * Version: 1.0.0
  * Author: bPlugins LLC
  * Author URI: http://bplugins.com
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.txt
- * Text Domain: b-blocks
+ * Text Domain: login-form-block
  */
 
 // ABS PATH
