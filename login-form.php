@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Login Form Block
- * Description: Description of the Login Form.
+ * Description: Login form easily customize your login page..
  * Version: 1.0.0
  * Author: bPlugins LLC
  * Author URI: http://bplugins.com

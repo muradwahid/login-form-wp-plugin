@@ -1,6 +1,5 @@
 import React from 'react';
-import { getBoxCss } from '../../utils/functions';
-import { getBackgroundCSS, getBorderCSS, getTypoCSS, getMultiShadowCSS, getColorsCSS } from "../../../../Components/utils/getCSS"
+import { getBackgroundCSS, getBorderCSS, getTypoCSS, getMultiShadowCSS, getColorsCSS,getBoxCSS } from "../../../../bpl-tools/utils/getCSS"
 const Style = ({ attributes }) => {
   const { cId, formInput, button, form, labels, errorMessage, messages } = attributes;
   const mainWrapper = `#lgfr-login-form-${cId} .login-form-main-wrapper`;
@@ -14,14 +13,14 @@ const Style = ({ attributes }) => {
     ${getTypoCSS('', messages.typography)?.googleFontLink}
     ${formWrapper}{
       row-gap: ${form.fieldGap};
-      padding:${getBoxCss(form.padding?.desktop)};
-      margin:${getBoxCss(form.margin?.desktop)};
+      padding:${getBoxCSS(form.padding?.desktop)};
+      margin:${getBoxCSS(form.margin?.desktop)};
       ${getBorderCSS(form.border)}
       ${getBackgroundCSS(form.background)};
       box-shadow:${getMultiShadowCSS(form.shadow)};
     }
     ${field} input{
-      padding:${getBoxCss(formInput.padding)};
+      padding:${getBoxCSS(formInput.padding)};
       color:${formInput.color};
       background-color:${formInput.bgColor};
       ${getBorderCSS(formInput.border)}
@@ -43,7 +42,7 @@ const Style = ({ attributes }) => {
       ${formWrapper} .login-submitBtn .submitBtn{
         ${getColorsCSS(button.colors)};
         ${button.alignment.desktop === "justify" && `width:100%`};
-        padding:${getBoxCss(button.padding)};
+        padding:${getBoxCSS(button.padding)};
         ${getBorderCSS(button.border)};
         box-shadow:${getMultiShadowCSS(button.shadow)};
         transition:all 0.3s ease-in-out;
@@ -73,18 +72,18 @@ const Style = ({ attributes }) => {
       .bpl-success-message{
         color:${messages.success.color.text};
         background:${messages.success.color.bg};
-        padding:${getBoxCss(messages.padding)};
+        padding:${getBoxCSS(messages.padding)};
       }
       ${getTypoCSS(`${formWrapper} .lgfr-login-failed-error`, labels.typography).styles}
       .lgfr-login-failed-error{
         color:${messages.error.color.text};
         background:${messages.error.color.bg};
-        padding:${getBoxCss(messages.padding)};
+        padding:${getBoxCSS(messages.padding)};
 
       }
       ${mainWrapper} .form-error-message{
         ${getBackgroundCSS(messages.normal.color.bg)};
-        padding:${getBoxCss(messages.normal.padding)};
+        padding:${getBoxCSS(messages.normal.padding)};
         ${getBorderCSS(messages.normal.border)}
       }
       ${mainWrapper} .form-error-message :where(svg,span){
@@ -92,10 +91,10 @@ const Style = ({ attributes }) => {
       }
 
 
-      @media (min-width: 768px) and (max-width: 1023px) {
+      @media (min-width: 641px) and (max-width: 1024px) {
         ${formWrapper}{
-          padding:${getBoxCss(form.padding?.tablet)};
-          margin:${getBoxCss(form.margin?.tablet)};
+          padding:${getBoxCSS(form.padding?.tablet)};
+          margin:${getBoxCSS(form.margin?.tablet)};
         }
         ${formWrapper} .login-submitBtn{
           justify-content:${button.alignment.tablet}
@@ -105,10 +104,10 @@ const Style = ({ attributes }) => {
         }
       }
 
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 640px) {
         ${formWrapper}{
-          padding:${getBoxCss(form.padding?.mobile)};
-          margin:${getBoxCss(form.margin?.mobile)};
+          padding:${getBoxCSS(form.padding?.mobile)};
+          margin:${getBoxCSS(form.margin?.mobile)};
         }
         ${formWrapper} .login-submitBtn{
           justify-content:${button.alignment.mobile}

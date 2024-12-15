@@ -8,7 +8,7 @@ const Form = ({ attributes, nonce }) => {
   const [showPass, setShowPass] = useState(false);
   const [errorUserName, setErrorUserName] = useState(false);
   const [errorPassword, setErrorPassword] = useState(false);
-  const [formErrorMessage, setFormErrorMessage] = useState('')
+  const [formErrorMessage, setFormErrorMessage] = useState('');
   const [formType, setFormType] = useState("loginform");
   const [btnDisabled, setBtnDisabled] = useState(false);
   const handleLoginForm = async (e) => {
@@ -32,7 +32,6 @@ const Form = ({ attributes, nonce }) => {
       setErrorPassword(false)
     }
     if (!errorUserName && !errorPassword) {
-
       const formData = new FormData();
 
       formData.append('action', 'lgfr_login');

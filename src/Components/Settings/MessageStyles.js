@@ -3,9 +3,9 @@ import React, { Fragment, useState } from 'react';
 import { __ } from '@wordpress/i18n';
 import { updateData } from '../../utils/helper';
 import { inputPaddingReset } from '../../utils/functions';
-import { Background, BorderControl, Label, Typography } from '../../../../Components';
+import { Background, Label, Typography, ColorControl } from '../../../../bpl-tools/Components';
+import { BorderControl } from '../../../../bpl-tools/Components/Deprecated';
 import { tostPositionOptions } from '../../utils/options';
-import PanelColorControl from '../Panel/PanelColorControl/PanelColorControl';
 import Tab from '../Panel/Tab/Tab';
 
 const MessageStyles = ({ attributes, setAttributes }) => {
@@ -21,7 +21,7 @@ const MessageStyles = ({ attributes, setAttributes }) => {
 
         {
           messages.type === "normal" && <Fragment>
-            <PanelColorControl  label={__("Text Color", "login-form-block")} value={messages.normal.color.text} onChange={(value) => setAttributes({ messages: updateData(messages, "normal", value, "color", "text") })} />
+            <ColorControl  label={__("Text Color", "login-form-block")} value={messages.normal.color.text} onChange={(value) => setAttributes({ messages: updateData(messages, "normal", value, "color", "text") })} />
             <Background label={__("Background", "login-form-block")} value={messages.normal.color.bg} onChange={(value) => setAttributes({ messages: updateData(messages, "normal", value, "color", "bg") })} />
             <BoxControl label={__("Padding", "login-form-block")} values={inputPaddingReset} onChange={(value) => setAttributes({ messages: updateData(messages, "normal", value, "padding") })} />
 
@@ -45,15 +45,15 @@ const MessageStyles = ({ attributes, setAttributes }) => {
             {
               tab === "Success" && <Fragment>
                 <Fragment>
-                  <PanelColorControl label={__("Text Color", "login-form-block")} value={messages.success.color.text} onChange={(value) => setAttributes({ messages: updateData(messages, "success", value, "color", "text") })} />
-                  <PanelColorControl label={__("Background", "login-form-block")} value={messages.success.color.bg} onChange={(value) => setAttributes({ messages: updateData(messages, "success", value, "color", "bg") })} />
+                  <ColorControl label={__("Text Color", "login-form-block")} value={messages.success.color.text} onChange={(value) => setAttributes({ messages: updateData(messages, "success", value, "color", "text") })} />
+                  <ColorControl label={__("Background", "login-form-block")} value={messages.success.color.bg} onChange={(value) => setAttributes({ messages: updateData(messages, "success", value, "color", "bg") })} />
                 </Fragment>
               </Fragment>
             }
             {
               tab === "Error" && <Fragment>
-                <PanelColorControl label={__("Text Color", "login-form-block")} value={messages.error.color.text} onChange={(value) => setAttributes({ messages: updateData(messages, "error", value, "color", "text") })} />
-                <PanelColorControl label={__("Background", "login-form-block")} value={messages.error.color.bg} onChange={(value) => setAttributes({ messages: updateData(messages, "error", value, "color", "bg") })} />
+                <ColorControl label={__("Text Color", "login-form-block")} value={messages.error.color.text} onChange={(value) => setAttributes({ messages: updateData(messages, "error", value, "color", "text") })} />
+                <ColorControl label={__("Background", "login-form-block")} value={messages.error.color.bg} onChange={(value) => setAttributes({ messages: updateData(messages, "error", value, "color", "bg") })} />
               </Fragment>
             }
           </Fragment>
